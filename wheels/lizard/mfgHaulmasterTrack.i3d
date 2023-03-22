@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mfgHaulmasterTrack" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="13" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="8" filename="mfgHaulmasterTrack_normal.png"/>
+    <File fileId="9" filename="mfgHaulmasterTrack_specular.png"/>
+    <File fileId="10" filename="mfgHaulmasterWheels_diffuse.png"/>
+    <File fileId="11" filename="mfgHaulmasterWheels_normal.png"/>
+    <File fileId="12" filename="mfgHaulmasterWheels_specular.png"/>
+    <File fileId="2" filename="mfgHaulmaster_normal.png"/>
+    <File fileId="3" filename="mfgHaulmaster_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="7" customShaderId="4" customShaderVariation="Decal_colorMask">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="mfgHaulmaster_mat" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="mfgHaulmasterTrack_mat" materialId="5" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="uvScroll_colorMask">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="mfgHaulmasterWheels_mat" materialId="6" customShaderId="4" customShaderVariation="colorMask">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.0802 0.1529 0.3095 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mfgHaulmasterTrack.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="crawlers" nodeId="33">
+        <Shape shapeId="1" name="crawlerLeft" clipDistance="300" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="2" name="belt" translation="0.00067421 0.00785362 1.58828" clipDistance="300" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="wheel01" translation="0.0017112 8.2016e-07 3.24427" clipDistance="300" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="Track_rivet_decals2" translation="0.232677 0.255708 -1.74089" clipDistance="30" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="5" name="wheel02" translation="0.00171173 -9.53674e-08 2.67029e-07" clipDistance="300" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="6" name="Track_rivet_decals1" translation="0.232677 0.255709 1.50338" clipDistance="30" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="7" name="wheel03" translation="0.00171443 -0.275454 2.46465" rotation="101.096 0 0" clipDistance="300" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="wheel04" translation="0.0017123 -0.275476 1.93126" clipDistance="300" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="9" name="wheel05" translation="0.00171384 -0.275285 1.30376" clipDistance="300" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="10" name="wheel06" translation="0.00171432 -0.275638 0.770357" clipDistance="300" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="Track_rivet_decals" translation="0.234389 0.255708 1.50338" clipDistance="30" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="12" name="reflectorsYellow" translation="0.0721098 0.0778446 1.59973" clipDistance="75" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="13" name="crawlerRight" clipDistance="300" nodeId="46" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="14" name="belt" translation="-0.00067421 0.00785362 1.58828" clipDistance="300" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="15" name="wheel01" translation="-0.267026 5.91278e-07 3.24427" clipDistance="300" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="16" name="Track_rivet_decals2" translation="0.032637 0.255708 -1.74089" clipDistance="30" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="17" name="wheel02" translation="-0.267026 -1.90735e-08 0" clipDistance="300" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="18" name="Track_rivet_decals1" translation="0.0326378 0.255708 1.50338" clipDistance="30" nodeId="51" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="19" name="wheel03" translation="0.252168 -0.275395 2.46459" clipDistance="300" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="wheel04" translation="-0.255596 -0.275564 1.93099" clipDistance="300" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="21" name="wheel05" translation="-0.255593 -0.275272 1.30381" clipDistance="300" nodeId="54" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="wheel06" translation="-0.255596 -0.27581 0.770083" clipDistance="300" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="Track_rivet_decals" translation="-0.234389 0.255708 1.50338" clipDistance="30" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="24" name="reflectorsYellow" translation="-0.0721098 0.0778446 1.59973" clipDistance="75" nodeId="57" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
